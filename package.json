@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "vite-plugin-inspect": "^0.7.18",
     "vue": "^3.2.45"
   },
   "devDependencies": {
