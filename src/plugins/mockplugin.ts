@@ -2,7 +2,7 @@ import { Plugin, ResolvedConfig } from "vite";
 import fs from "node:fs";
 import path from "node:path";
 
-export default function viteMockPlugin(options): Plugin {
+export default function viteMockPlugin(): Plugin {
   return {
     name: "vite-plugin-mock",
     async configureServer(server) {

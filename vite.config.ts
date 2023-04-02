@@ -5,14 +5,14 @@ import inspect from "vite-plugin-inspect";
 import alias from "./src/plugins/viteAlias";
 import htmlPlugin from "./src/plugins/htmlPlugin";
 import mockPlugin from "./src/plugins/mockplugin";
+import autoImportrouter from "./src/plugins/autoImportrouter";
 
 export default defineConfig({
   plugins: [
     vue(),
     alias(),
-    mockPlugin({
-      mockPath: "mock",
-    }),
+    autoImportrouter(),
+    // mockPlugin(),
     // htmlPlugin({
     //   inject: {
     //     data: {
