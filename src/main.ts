@@ -6,3 +6,12 @@ import App from "./App.vue";
 // alert(`结果: ${fib(10)}`);
 // alert(fib);
 createApp(App).mount("#app");
+fetch("/api/users", {
+  method: "post",
+})
+  .then((data) => {
+    console.log("data", data);
+  })
+  .catch((error) => {
+    console.log("error", error);
+  });

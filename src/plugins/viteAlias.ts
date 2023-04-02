@@ -40,7 +40,6 @@ export default function alias(keyName = "@"): Plugin {
     name: "vite-plugin-alias",
     config(config, env) {
       const resolveAliasesObj = getTotalSrcDir(keyName);
-      console.log(resolveAliasesObj);
       return {
         resolve: {
           alias: resolveAliasesObj,
